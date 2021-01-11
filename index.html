@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder's Trivia</title>
+    <!-- Link to Boostrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- CSS styling -->
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <nav class="header">
+        <div class="card-body justify-content-end">
+            <!-- Link to HighScores html -->
+            <a href="HighScores.html" type="button" id="score">View High Scores</a>
+            <a id="timer"></a>
+        </div>
+    </nav>
+    
+    <!-- Main page includes Title and description -->
+    <main class="container">
+        
+        <!-- Quiz Home Page -->
+        <div id="quizChallengePage">
+            <!-- <div class="body">  -->
+                <h1>Coding Quiz Challenge</h1>
+                <!--Quiz Explanation -->
+                <div class="text-center">
+                    <p>This quiz will present you with a series of Javascript questions. It will be timed.<br>
+                    Any incorrect answers will deduct 10 seconds from your time and your score<br>
+                    Are you Ready?</p>
+            
+                    <!-- Button to start quiz -->
+                    <div class="center">    
+                        <button id="submitButton" type="button" class="btn active">Start Quiz</button>
+                    </div>
+                </div>
+            <!-- </div> -->
+        </div>
+
+        <!-- Quiz Question Page -->
+        <div id="quizQuestionsPage">
+            <h2 id="quizQuestionHeader"></h2>
+            <ul>
+                <li class="questions"><button type="button" class="btn questionButton" id="one"></button></li>
+                <li class="questions"><button type="button" class="btn questionButton" id="two"></button></li>
+                <li class="questions"><button type="button" class="btn questionButton" id="three"></button></li>
+                <li class="questions"><button type="button" class="btn questionButton" id="four"></button></li>
+            </ul>
+            <div id="answerResponse"></div>
+        </div>
+
+        <!-- Final Score Page -->
+        <div id="finalScorePage">
+            <h2 id="allDone">All done!</h2>
+            <div id="finalScoreIs"></div>
+            <form class="row">
+                <!-- Enter initials -->
+                <div class="form-inline">
+                    <label for="text" id="initials" class="col col-form-label input-group"></label>
+                    <div class="col"> 
+                        <input type="text" class="form-control" id="initialInput">
+                    </div>
+                    <div class="col"> 
+                        <button id="initialButton" class="btn" type="button"></button></a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    
+    <script src="./script.js"></script>
+
+</body>
+</html>
